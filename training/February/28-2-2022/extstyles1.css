@@ -1,0 +1,22 @@
+body
+{
+    background-color:rgb(153, 140, 211)
+}
+h2
+{
+color:darkgreen;
+font-family: 'Lucida Sans';
+font-size: 25pt;
+}
+label
+{
+color:rgb(46, 28, 212);
+font-family: 'Cambria';
+font-size:15pt;
+}
+Input
+{
+color:rgb(23, 185, 58);
+font-family: 'Cambria';
+font-size:15pt;
+}
