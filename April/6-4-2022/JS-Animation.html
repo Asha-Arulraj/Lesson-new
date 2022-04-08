@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" type="txt/css" href="animation.css">
+   
+   
+   <style>
+    #parent
+    {
+    width: 780px;
+    height: 650px; 
+    background-color: rgb(0, 153, 255);
+    position: relative;
+    }
+    #child
+    {
+    width: 180px;
+    height: 50px; 
+    background-color: rgb(255, 0, 242);
+    position:absolute;
+    }
+    </style>
+
+</head>
+<body>
+  <p>  <button onclick="action()">CLICK ME</button> </p>
+<div id="parent">
+<div id="child"> <p style="text-align: center; color: aliceblue;">welcome</p></div>
+</div>
+
+
+<!-- <script>
+  function action()
+{
+    var on=document.getElementById("child");
+    var pos=0;
+    var id=setInterval(inelement, 5);
+    function inelement()
+    {
+        if(pos==350)
+        {
+            clearTimeout(id);
+        }
+        else{
+            pos++;
+            on.style.top=pos+'px';
+            on.style.left=pos+'px';
+        }
+    }
+}
+</script> -->
+<script src="animation.js"></script> 
+</body>
+</html>
