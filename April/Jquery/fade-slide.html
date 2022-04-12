@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade methods</title>
+    <style>
+       .aaa
+       {
+           background-color: rgb(114, 179, 179);
+           display: none;
+       }
+       .bbb
+       {
+           background-color: rgb(153, 117, 187);
+           display: none;
+       } 
+       .ccc
+       {
+           background-color: rgb(160, 128, 88);
+           display: none;
+       }
+       #div1
+       {
+           background-color: dimgrey;
+          
+       }
+    </style>
+</head>
+<body>
+    
+    <h1>Fade Methods</h1>
+   <div id="div1"> What are Events?
+    <p class="aaa">What are Events?
+        All the different visitors' actions that a web page can respond to are called events.
+        
+        An event represents the precise moment when something happens.</p>
+        <p class="bbb">
+            In jQuery, most DOM events have an equivalent jQuery method.
+        </p>
+        <p class="ccc">
+            The click() method attaches an event handler function to an HTML element.
+
+            The function is executed when the user clicks on the HTML element. 
+        </p>
+        <p class="aaa">
+            The dblclick() method attaches an event handler function to an HTML element.
+        </p>
+
+        <p class="bbb">
+            The mouseenter() method attaches an event handler function to an HTML element.
+        </p>
+        <p class="ccc">
+            The mousedown() method attaches an event handler function to an HTML element. 
+        </p>
+        <p class="aaa">
+            The mouseup() method attaches an event handler function to an HTML element.
+        </p>
+        <p class="bbb">
+            The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.
+        </p>
+        <p class="ccc">
+            The focus() method attaches an event handler function to an HTML form field.
+        </p>
+    </div>
+<script src="JQJS/jquery-3.6.0.min.js.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $("#div1").click(function()
+            {
+                $(".aaa").fadeIn("slow");
+               $(".aaa").mouseover(function()
+               {
+                $(".bbb").fadeIn("slow");
+               })
+               $(".bbb").mouseleave(function()
+               {
+                $(".ccc").fadeIn("slow");
+               })
+            });
+    });
+</script>
+<script>
+$(document).ready(function(){
+    $("#div1").dblclick(function()
+    {
+        $(".aaa").slideUp("slow");
+    })
+})
+</script>
+</body>
+</html>
