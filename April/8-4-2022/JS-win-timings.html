@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Timings</title>
+</head>
+<body>
+  
+    
+    <h2>JavaScript Timing</h2>
+
+<p>Click "check". Wait 2 seconds, and the page will shows Something.</p>
+
+<button onclick="setTimeout(myFunction, 2000);">Check</button>
+<p id=Tdate></p>
+
+<script>
+function myFunction() {
+  var date =  new Date();
+  document.getElementById("Tdate").innerHTML=date;
+}
+</script>
+<hr>
+<h1>Example for Timeout</h1>
+
+<button onclick="out= setTimeout(timings, 3000)";>click</button>
+<button onclick="clearTimeout(out)";>hide</button>
+ <p id="p1"> </p>
+
+<p id="p2">sorry clear timeout is executed now</p>
+
+<script>
+    // var d1= setTimeout(timings(),3000);
+    // clearTimeout(d1);
+function timings()
+{
+  var txt= document.getElementById("p1").innerHTML="Hello Eveyone";
+}
+
+</script>
+</body>
+</html>
