@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes in JQuery</title>
+    <style>
+        .para
+        {
+            color: crimson;
+        }
+        .ppp{
+            font-family:'Lucida Sans';
+        }
+        .list{
+            color: deepskyblue;
+            font-family: 'Courier New';
+        }
+    </style>
+</head>
+<body>
+    <h1 style ="background-color:yellow;">Classes in JQuery</h1>
+    <p id="p1">
+        The click() method attaches an event handler function to an HTML element.
+    </p>
+    <p id="p2">
+        The dblclick() method attaches an event handler function to an HTML element.
+    </p>
+
+    <p id="p3">
+        The mouseenter() method attaches an event handler function to an HTML element.
+    </p>
+    <p id="p4">
+        The mousedown() method attaches an event handler function to an HTML element. 
+    </p>
+    <p id="p5">
+        The mouseup() method attaches an event handler function to an HTML element.
+    </p>
+    <p id="p6">
+        The hover() method takes two functions and is a combination of the mouseenter() and mouseleave() methods.
+    </p>
+    <p>
+        The focus() method attaches an event handler function to an HTML form field.
+       <div id="div1"> <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+        </ul>
+    </div>
+    </p>
+
+
+<script src="JQJS/jquery-3.6.0.min.js.js"></script>
+
+<script>
+    $(document).ready(function()
+    {
+        $("h1").click(function()
+        {
+            $("p").addClass("para ppp");
+           
+        });
+        $("#p1").mouseover(function()
+        {
+         $("li").toggleClass("list");
+        });
+
+        $("li").mouseover(function()
+        {
+         $("#p1").removeClass("para");
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#p6").mouseleave(function(){
+            $("#div1").css({"background-color": "grey", "border-style": "dotted"});
+        });
+           });
+</script>
+</body>
+</html>
