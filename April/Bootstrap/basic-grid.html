@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="JQJS/jquery-3.6.0.min.js.js"></script>
+        <script src="JQJS/jquery-1.12.4.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- <link rel ="stylesheet" href="JQJS/bootstrap.min.css">
+        <script src="JQJS/jquery-3.6.0.min.js.js"></script>
+        <script src="JQJS/jquery-1.12.4.min.js"></script> 
+       <script src="JQJS/bootstrap.min.js"></script>  -->
+   
+   
+    </head>
+    <body>
+      <div class="container bg-warning border">
+        <h1 class="text-info">Welcome!</h1>
+        <p class="">This is a example for Bootstrab container</p>
+        
+        <div class="row">
+        <div class="col-sm-3 bg-success"><button id="chk" type="button" class="btn-outline-primary">CHECK</button></div>
+        <div class="col-sm-6 bg-light"><button id="ok" type="button" class="btn-outline-success btn-lg">OK</button></div>
+        <div class="col-sm-3 bg-success"><button id="click" type="button" class="btn-outline-primary btn-sm">CLICK</button></div>
+        <br><br>
+        </div>
+        
+        <button  id="subm" type="=button" class="btn-outline-info btn-block">submit</button>
+        
+        
+    </div>
+      <script>
+          $(document).ready(function()
+          {
+            $("#chk").click(function()
+            {
+                alert("i am a small size button");
+            });
+            $("#ok").click(function()
+            {
+                alert("i am a Large size button");
+            });
+            $("#click").click(function()
+            {
+                alert("i am a default size button");
+            });
+            $("#subm").click(function()
+            {
+                alert("i am a block level button");
+            });
+
+          });
+      </script>
+       
+    </body>
+    </html>
