@@ -1,0 +1,32 @@
+<p>addemployee works!</p>
+<div class="container">
+
+    <form [formGroup]="addEmpForm" (ngSubmit)="signin();">
+        <div class="form-group">
+            <label >EmpName</label>
+            <input type="text" class="form-control" id="Name"  formControlName="empname">
+          
+            <span *ngIf ="addEmpForm.get('empname')?.touched && addEmpForm.get('empname')?.hasError('required')">Enter correct User EmailId</span>
+        
+        </div>
+        <div class="form-group">
+            <label >Login Email</label>
+            <input type="email" class="form-control" id="Email" email formControlName="usremailid">
+          
+            <span *ngIf ="addEmpForm.get('usremailid')?.touched && addEmpForm.get('usremailid')?.hasError('required')">Enter correct User EmailId</span>
+        
+        </div>
+
+        <div class="form-group">
+            <label >phoneNo</label>
+            <input type="tel" class="form-control" id="Name"  formControlName="phno">
+          
+            <span *ngIf ="addEmpForm.get('phno')?.touched && addEmpForm.get('phno')?.hasError('required')">Enter correct User EmailId</span>
+        
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-primary">Check</button>
+    </form>
+    
+    </div>
